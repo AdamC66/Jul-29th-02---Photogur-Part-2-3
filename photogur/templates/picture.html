@@ -1,4 +1,10 @@
 {% extends 'base.html' %}
+
+{% load staticfiles %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/picture.css' %}">
+{% endblock %}
+
 {% block content %}
     <h1>{{ picture.title }}</h1>
     <h2>{{ picture.artist }}</h2>
